@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "all": "npm run screenshot && npm run copyExpected && npm run test",
+    "screenshot": "node ./index.js",
+    "copyExpected": "cp -r ./expected/ ./.reg/expected",
+    "test": "reg-suit run"
   },
   "repository": {
     "type": "git",
@@ -18,5 +21,8 @@
   "homepage": "https://github.com/y-natani/imageCompare#readme",
   "dependencies": {
     "puppeteer": "^14.3.0"
+  },
+  "devDependencies": {
+    "reg-suit": "^0.12.1"
   }
 }

@@ -1,1 +1,8 @@
 /node_modules
+.reg/*
+!actual
+!expected
+
+
+actual/*
+expected/*
