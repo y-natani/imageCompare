@@ -6,7 +6,7 @@
   "scripts": {
     "all": "npm run screenshot && npm run copyExpected && npm run test",
     "screenshot": "node ./index.js",
-    "copyExpected": "cp -r ./expected/ ./.reg/expected",
+    "copyExpected": "cp -r ./expected/ ./_reg/expected",
     "test": "reg-suit run"
   },
   "repository": {
