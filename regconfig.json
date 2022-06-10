@@ -1,6 +1,6 @@
 {
   "core": {
-    "workingDir": ".reg",
+    "workingDir": "_reg",
     "actualDir": "actual",
     "thresholdRate": 0,
     "addIgnore": true,
