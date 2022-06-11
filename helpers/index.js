@@ -1,6 +1,6 @@
 // @ts-check
 exports.makeFileName = (url) => {
-  return url.replace('/index.html', '').replace('/', '_') + '.png'
+  return url.replace('/index.html', '').replace(/\//g, '_') + '.png'
 }
 
 exports.delay = (time) =>  {
