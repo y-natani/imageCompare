@@ -36,4 +36,5 @@ const takeScreenshot = async (url, imageFileName) => {
     await takeScreenshot(`${actualDomain.domain}/${url}`,`actual/${makeFileName(url)}`);
     await takeScreenshot(`${expectDomain.domain}/${url}`, `expected/${makeFileName(url)}`);
   }
+  console.log(`終了時刻`, new Date().toString())
 })();
